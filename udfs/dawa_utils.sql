@@ -75,7 +75,7 @@ def get(endpoint, til, fra):
     if fra is not None:
         txidfra = str(fra)
 
-    return api.get(endpoint, txidtil=txidtil, txidfra=txidfra)
+    return api.get(endpoint, txidfra=txidfra, txidtil=txidtil)
 
 def run(ctx):
     pass

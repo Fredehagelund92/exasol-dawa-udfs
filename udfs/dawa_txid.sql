@@ -14,6 +14,13 @@ from dawa import API
 def run(ctx):
 
 	api = API()
+	
+	txid = api.txid()
+	
+	if txid is None:
+		raise ValueError('dawa api returned a empty txId')
+
+
 	return api.txid()
 
 /
